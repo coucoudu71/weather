@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="meteo.js"></script>
+</head>
+<body>
+	<div class="container">
+			<h1>Quel temps fait-il ?</h1>
+
+			<div class="search">
+
+				<div class="chomp"><input type="input" name="input" value="Paris, fr" class="input" id="queryLoc"><button class="button" onclick="buttonClickGET()">Voyons ça</button></div>
+
+				<p id="zone_meteo"></p>
+			</div>
+	</div>
+</body>
+</html>
