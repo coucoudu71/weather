@@ -9,10 +9,12 @@ body{
 }
 .clair{
 	background-color: #a8753e;
+	transition: all 0.5s;
 }
 
 .sombre{
 	background-color: #35363a;
+	transition: all 0.5s;
 }
 
 .imgsombre{
