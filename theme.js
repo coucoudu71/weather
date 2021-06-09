@@ -1,12 +1,11 @@
 
 window.onload = () => { // Nous attendons que le DOM soit entièrement chargé
-    // Nous allons chercher la balise "link" contenant le thème
+    
     let element = document.getElementById("titre")
     let img = document.getElementById("img")
     // Nous vérifions si un thème est déjà stocké
     if(localStorage.theme != null){
-        // Si un thème est stocké, nous le chargeons dans le href de la balise link
-        //element.classList.add(`${localStorage.theme}`)
+        
 
         if (localStorage.theme == "clair") {
             element.classList.add("clair")
@@ -20,7 +19,7 @@ window.onload = () => { // Nous attendons que le DOM soit entièrement chargé
         }
 
     }else{
-        // Si aucun thème n'est stocké, nous initialisons le lien
+        // Si aucun thème n'est stocké, nous initialisons le theme
        element.classList.add("clair")
         // Nous stockons le thème clair
         localStorage.theme = "clair"
