@@ -5,8 +5,20 @@ body{
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	/*background-color: #a8753e;*/
+}
+.clair{
 	background-color: #a8753e;
 }
+
+.sombre{
+	background-color: #35363a;
+}
+
+.imgsombre{
+	filter: invert(1);
+}
+
 .container{
 	display: flex;
 	height: 100%;
@@ -70,12 +82,25 @@ p{
 	bottom: 20%;*/
 }
 
-
+img{
+	height: 25px;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	transition: all 0.5s;
+}
 @media (max-width: 1000px){
 
 	h1{
 		font-size: 6em;
 	}
+	img{
+		height: 70px;
+		right: 30px;
+		top: 30px;
+	}
+
 	.chomp{
 		display: flex;
 		flex-direction: column;

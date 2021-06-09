@@ -8,14 +8,20 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="meteo.js"></script>
+	<script src="meteoapp.js"></script>
+	<script type="text/javascript" src="theme.js"></script>
 </head>
-<body>
+<body class="" id="titre">
+	
+
 	<div class="container">
+		<img src="lune.png" onClick="changercouleur()" id="img"></img>
 			<h1>Quel temps fait-il ?</h1>
 
 			<div class="search">
+
 				<div class="chomp"><input type="input" name="input" value="Paris, fr" class="input" id="queryLoc"><button class="button" onclick="buttonClickGET()">Voyons ça</button></div>
+
 				<p id="zone_meteo"></p>
 			</div>
 	</div>
